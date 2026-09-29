@@ -10,11 +10,9 @@
 {
   "sections": {
     "main": {
-      "type": "hello-world",
+      "type": "main-home",
       "settings": {}
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main"]
 }
