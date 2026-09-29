@@ -3,6 +3,7 @@
 <html lang="{{ request.locale.iso_code }}">
   <head>
     <meta charset="utf-8">
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1"
@@ -18,10 +19,7 @@
   <body>
     {% sections 'header-group' %}
 
-    <main
-      id="MainContent"
-      role="main"
-    >
+    <main id="MainContent" role="main">
       {{ content_for_layout }}
     </main>
 
