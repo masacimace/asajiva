@@ -9,7 +9,7 @@
       content="width=device-width, initial-scale=1"
     >
 
-    {{ 'critical.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'asajiva.css' | asset_url | stylesheet_tag: preload: true }}
 
     {% render 'meta-tags' %}
 
@@ -17,12 +17,8 @@
   </head>
 
   <body>
-    {% sections 'header-group' %}
-
     <main id="MainContent" role="main">
       {{ content_for_layout }}
     </main>
-
-    {% sections 'footer-group' %}
   </body>
 </html>

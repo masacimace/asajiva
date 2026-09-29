@@ -1,0 +1,23 @@
+{
+  "name": "asajiva-theme",
+  "version": "1.0.0",
+  "description": "Asajiva theme for Shopify",
+  "main": "index.js",
+  "scripts": {
+    "dev:css": "npx @tailwindcss/cli -i ./src/styles/app.css -o ./assets/asajiva.css --watch",
+    "dev:shopify": "shopify theme dev --theme-editor-sync --reconciliation-strategy keep-local",
+    "dev": "concurrently -k -n TAILWIND,SHOPIFY \"npm:dev:css\" \"npm:dev:shopify\"",
+    "build:css": "npx @tailwindcss/cli -i ./src/styles/app.css -o ./assets/asajiva.css --minify",
+    "build": "npm run build:css",
+    "check": "shopify theme check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "concurrently": "^10.0.5",
+    "tailwindcss": "^4.3.3"
+  }
+}

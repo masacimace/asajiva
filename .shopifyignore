@@ -11,3 +11,12 @@
 #
 # Ignore templates and sections with a regular expression:
 #   /(templates|sections)/.*\.json/
+# Development source
+src/**
+
+# Node dependencies
+node_modules/**
+
+# Development tooling
+package.json
+package-lock.json

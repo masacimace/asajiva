@@ -1,0 +1,9 @@
+/* src/styles/app.css */
+
+@import "tailwindcss" source(none);
+
+@source "../../layout";
+@source "../../sections";
+@source "../../snippets";
+@source "../../blocks";
+@source "../../templates";
